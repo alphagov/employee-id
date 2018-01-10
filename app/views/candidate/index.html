@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Prove your identity
+      </h1>
+      <p>
+        This service is for people applying to work in the civil service.
+      </p>
+
+      <p>
+        Before you come in for an interview, we need you to prove your identity. The easiest way to do this is with GOV.UK Verify.
+      </p>
+			<p>
+				You'll also need to upload a digital photo of yourself as part of this process.
+			</p>
+			<a class="button button-start" href="http://govuk-verify.herokuapp.com/intro?requestId=work-in-gov
+" role="button">Continue to GOV.UK Verify</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
