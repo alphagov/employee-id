@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Add a photo of yourself
+      </h1>
+      <p>
+        We have received your name, address and date of birth from GOV.UK Verify.
+      </p>
+			<p>
+				We now need a photo of you. The easiest way to upload a photo is with a camera on your device.
+			</p>
+
+			<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h2 class="heading-medium">
+          Do you have a webcam on this computer?
+        </h2>
+      </legend>
+
+      <div class="multiple-choice">
+        <input id="radio-1" type="radio" name="radio-group" value="take-photo-webcam">
+        <label for="radio-1">Yes</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-2" type="radio" name="radio-group" value="No">
+        <label for="radio-2">No</label>
+      </div>
+			<div class="multiple-choice">
+        <input id="radio-3" type="radio" name="radio-group" value="No">
+        <label for="radio-3">I'm not sure</label>
+      </div>
+    </fieldset>
+  </div>
+	
+	<div class="form-group">
+		<button id="photo-label-text" class="button">Continue</button>
+	</div>
+</form>
+
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
