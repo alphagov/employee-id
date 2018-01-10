@@ -1,27 +1,27 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+	GOV.UK prototype kit
 {% endblock %}
 
 {% block content %}
 
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-two-thirds">
+	<main id="content" role="main">
+		<div class="grid-row">
+			<div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">
-        Check an applicant's ID
-      </h1>{{releaseVersion | log }}
-      <form>
-    <div class="form-group">
-      <fieldset>
+				<h1 class="heading-xlarge">
+					Check an applicant's identity
+				</h1>{{releaseVersion | log }}
+				<form>
+					<div class="form-group">
+						<fieldset>
 
-        <legend>
-          <h1 class="heading-medium">
-What type of ID are you checking?
-</h1>
-        </legend>
+							<legend>
+								<h1 class="heading-medium">
+									What type of ID are you checking?
+								</h1>
+							</legend>
 
         <div class="multiple-choice" data-target="contact-by-email">
           <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
@@ -92,4 +92,4 @@ What type of ID are you checking?
 </p>
 </main>
 
-{% endblock %}
+		{% endblock %}
