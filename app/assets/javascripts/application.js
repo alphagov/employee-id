@@ -16,4 +16,12 @@ $(document).ready(function () {
   // to toggle hidden content
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
+	
+	
+	if (window.location.href.indexOf("loading-webcam-photo") > -1) {
+		setTimeout(function() {
+				window.location.href = 'webcam-photo-accepted';
+		}, 3000)
+}
+
 })

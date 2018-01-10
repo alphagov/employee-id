@@ -8,4 +8,20 @@ router.get('/', function (req, res) {
 
 // add your routes here
 
+// make radio-group button routes work
+
+router.get('*', function (req, res, next) {
+    // md = new MobileDetect(req.headers['user-agent']);
+    // res.locals.userAgent = md
+
+    var radioGroup = req.query['radio-group'];
+
+    if (radioGroup) {
+      res.redirect(radioGroup);
+    } else {
+      next()
+    }
+
+});
+
 module.exports = router
