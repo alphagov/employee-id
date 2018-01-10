@@ -18,10 +18,16 @@ $(document).ready(function () {
   showHideContent.init()
 	
 	
-	if (window.location.href.indexOf("loading-webcam-photo") > -1) {
+	if (window.location.href.indexOf("pre-interview/loading-webcam-photo") > -1) {
 		setTimeout(function() {
 				window.location.href = 'webcam-photo-accepted';
 		}, 3000)
-}
+	}
+		
+	if (window.location.href.indexOf("candidate/loading-webcam-photo") > -1) {
+		setTimeout(function() {
+				window.location.href = 'webcam-photo-accepted';
+		}, 3000)
+	}
 
 })
