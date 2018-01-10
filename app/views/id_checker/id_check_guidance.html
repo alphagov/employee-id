@@ -33,42 +33,63 @@ What type of ID are you checking?
         <li>Compare the signatures</li>
         <li>Intaglio printing (raised ink) on the biographical page</li>
         <li>Highly detailed holographs throughout the document</li>
-        </p>
         </div>
 
-        <div class="multiple-choice" data-target="contact-by-phone">
-          <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
-          <label for="example-contact-by-phone">Driving License</label>
+        <div class="multiple-choice" data-target="driving-licence">
+          <input id="example-driving-licence" type="radio" name="radio-contact-group" value="Yes">
+          <label for="example-driving-licence">Driving Licence</label>
         </div>
-        <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+        <div class="panel panel-border-narrow js-hidden" id="driving-licence">
           <ul class="list list-bullet">
         <li>Check for tampering around the biographical details page and photo</li>
         <li>Compare the signatures</li>
         <li>Intaglio printing (raised ink) on the biographical page</li>
         <li>Highly detailed holographs throughout the document</li>
-        </p>
         </div>
 
-        <div class="multiple-choice" data-target="contact-by-text">
-          <input id="example-contact-by-text" type="radio" name="radio-contact-group" value="No">
-          <label for="example-contact-by-text">Non-UK photo ID</label>
+        <div class="multiple-choice" data-target="non-uk-photo-id">
+          <input id="example-non-uk-photo-id" type="radio" name="radio-contact-group" value="Yes">
+          <label for="example-non-uk-photo-id">Non-UK Photo ID</label>
         </div>
-        <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
-          <label class="form-label" for="contact-text-message">Mobile phone number</label>
-          <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+        <div class="panel panel-border-narrow js-hidden" id="non-uk-photo-id">
+          <ul class="list list-bullet">
+        <li>Check for tampering around the biographical details page and photo</li>
+        <li>Compare the signatures</li>
+        <li>Intaglio printing (raised ink) on the biographical page</li>
+        <li>Highly detailed holographs throughout the document</li>
         </div>
 
+        <div class="multiple-choice" data-target="birth-certificate">
+          <input id="example-birth-certificate" type="radio" name="radio-contact-group" value="Yes">
+          <label for="example-birth-certificate">Birth certificate</label>
+        </div>
+        <div class="panel panel-border-narrow js-hidden" id="birth-certificate">
+          <ul class="list list-bullet">
+        <li>Check for tampering around the biographical details page and photo</li>
+        <li>Compare the signatures</li>
+        <li>Intaglio printing (raised ink) on the biographical page</li>
+        <li>Highly detailed holographs throughout the document</li>
+        </div>
       </fieldset>
-    </div>
-  </form>
+    </form>
+<br>
+<p>
+  If you would like to see genuine examples or further things to check, these can be found in the <a href="#">detailed guidance</a>
+</p>
+</div>
 <div class="multiple-choice">
   <input id="checkbox-telephone-number" name="contact-by-text-phone" type="checkbox" value="true">
-  <label for="checkbox-telephone-number">I confirm that the ID is legitimate and belongs to the applicant</label>
+  <label for="checkbox-telephone-number">I am satisfied that the document in front of me is genuine and belongs to the person claiming to own it</label>
 </div>
 <br>
 <br>
 <br>
+<br>
 <input class="button" type="submit" value="Save and continue">
+<p class="font-xsmall">
+  <br>
+  If you have any concerns about the persons identity after carrying out these checks then you should alert your line manager and <a href="#">report it here</a>. The security checks that are carried out on this person if they are successful rely on this check being completed.
+</p>
 </main>
 
 {% endblock %}
