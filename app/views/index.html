@@ -1,12 +1,44 @@
+{% extends "layout.html" %}
 
-<ul class="list list-bullet">
-	<li>
-		<a href="pre-interview">Pre-interview start</a>		
-	</li>
-	<li>
-		<a href="id_checker/signin">ID Checker Signin</a>		
-	</li>
-	<li>
-		<a href="id_checker/pre-candidate">Enter candidate number</a>	
-	</li>
-</ul>
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    	<h1 class="heading-xlarge">Check a government employee's identity
+    		<span class="heading-secondary">Alpha prototypes</span>
+    	</h1>
+
+    	<h2 class="heading-large alpha-heading">Alpha v2</h2>
+			<ul class="list list-bullet">
+				<li>
+					<a href="v2/pre-interview">Pre-interview start</a>		
+				</li>
+				<li>
+					<a href="v2/id_checker/signin">ID Checker Signin</a>		
+				</li>
+				<li>
+					<a href="v2/id_checker/pre-candidate">Enter candidate number</a>	
+				</li>
+			</ul>
+
+    	<h2 class="heading-large alpha-heading">Alpha v1</h2>
+			<ul class="list list-bullet">
+				<li>
+					<a href="v1/pre-interview">Pre-interview start</a>		
+				</li>
+				<li>
+					<a href="v1/id_checker/signin">ID Checker Signin</a>		
+				</li>
+				<li>
+					<a href="v1/id_checker/pre-candidate">Enter candidate number</a>	
+				</li>
+			</ul>
+
+</main>
+
+{% endblock %}
