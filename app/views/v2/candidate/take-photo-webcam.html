@@ -19,7 +19,16 @@
 		  	<p>
 		  		The photo will be matched against their passport photo.
 		  	</p>
-		    <button class='button button-start' onclick='takePhotoWebcam.start()'>Open camera</button>
+		    <!-- <button class='button button-start' onclick='takePhotoWebcam.start()'>Open camera</button> -->
+		    <form name="photoForm">
+					<div class="form-group file-upload">
+						<label for="photo" class="button photo-upload-label" role="button">
+							<span id="photo-label-text" class="button-start">Add a photo</span>
+						</label>
+						<input type="file" accept="image/*;capture=camera" id="photo" class="photo-choose-file" name="photo" aria-controls="progress-container" aria-required="true">
+					</div>
+				</form>
+
 		  </section>
 
 		  <section id='cannot-section' style='display:none'>
