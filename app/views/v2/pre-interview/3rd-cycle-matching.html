@@ -8,17 +8,18 @@
 
 <main id="content" role="main">
   <div class="column-two-thirds">
-    <h1 class="heading-xlarge">Identity verified</h1>
-    <p>We've received your name, address and date of birth from GOV.UK Verify.</p>
-    <hr>
-    <label class="form-label" for="ni-number">    
-      <h2 class="heading-medium">What's your UK passport number?</h2>
-    </label>
-    <input class="form-control" id="ni-number" type="text" name="ni-number">
-    <a class="button" href="verified">Next</a>
-    <p>If you have a UK passport, we'll take a photo of you at your interview and automatically check it against your passport photo.</p>
-    <p><a href="#">I don't have a UK passport</a></p>
-
+  <div class="back">
+    <a href="other-id-sources" class="link-back">Back</a>
+  </div>
+    <h1 class="heading-large">Enter your UK passport number</h1>
+    <form>
+      <div class="form-group">
+              <input class="form-control" id="ni-number" type="text" name="ni-number">
+              <p style="margin-top:30px;">By entering your passport number and continue, you are giving permission to access your details with Her Majesty’s Passport Office. We'll take a photo of you on the day of your interview and compare it with these details to confirm your identity.</p>
+              <p>The photo will not be stored and will be deleted as soon as the comparison is completed.</p>
+      </div>
+    </form>
+    <a class="button" href="verified">Continue</a>
   </div>
 </main>
 
