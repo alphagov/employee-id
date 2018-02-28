@@ -24,20 +24,4 @@ router.get('*', function (req, res, next) {
 
 });
 
-router.post('/id-options', function (req, res, next) {
-    // md = new MobileDetect(req.headers['user-agent']);
-    // res.locals.userAgent = md
-
-    var idOption = req.session.data['other-id']
-
-    if (idOption == 'none-of-the-above') {
-      res.redirect("/v2/pre-interview/unverified");
-    } else {
-      res.redirect("/v2/pre-interview/3rd-cycle-matching");
-    }
-
-});
-
-
-
 module.exports = router
