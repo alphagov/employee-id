@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="column-two-thirds">
+  <div class="back">
+    <a href="other-id-sources" class="link-back">Back</a>
+  </div>
+    <h1 class="heading-large">Enter your UK passport number</h1>
+    <form>
+      <div class="form-group">
+              <input class="form-control" id="ni-number" type="text" name="ni-number">
+              <p style="margin-top:30px;">By entering your passport number and continue, you are giving permission to access your details with Her Majesty’s Passport Office. We'll take a photo of you on the day of your interview and compare it with these details to confirm your identity.</p>
+              <p>The photo will not be stored and will be deleted as soon as the comparison is completed.</p>
+      </div>
+    </form>
+    <a class="button" href="verified">Continue</a>
+  </div>
+</main>
+
+{% endblock %}
+
+

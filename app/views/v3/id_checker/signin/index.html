@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Check candidate's identity
+      </h1>
+			<p>
+				Use this service to check the identity of candidates. To signin, enter your email address.
+			</p>
+			
+			<label class="form-label" for="full-name-f1">Email address</label>
+			<input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+			
+			<a class="button" href="signin/check-email" role="button">Next</a>
+
+</main>
+
+{% endblock %}
