@@ -1,0 +1,121 @@
+{% extends "publayout.html" %} {% block content %}
+<main role="main" id="content" class="html-publication" lang="en">
+    <div class="publication-external">
+        <ol class="organisation-logos">
+            <li class="organisation-logo">
+                <div class="govuk-organisation-logo cabinet-office">
+                    <a href="/government/organisations/government-digital-service" class="logo-container logo-link logo-with-crest crest-single-identity">
+
+    <span>Cabinet Office</span>
+
+    </a>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <header class="app-c-publication-header">
+        <div class="pub-c-title
+  pub-c-title--inverse
+  ">
+            <p class="pub-c-title__context">
+                Guidance
+            </p>
+            <h1 class="pub-c-title__text ">
+    Checking a public sector employee's identity
+  </h1>
+        </div>
+        <p class="app-c-publication-header__last-changed">Updated 9 February 2018</p>
+    </header>
+    <div class="grid-row sidebar-with-body" data-module="sticky-element-container" id="contents">
+        <div class="column-quarter-desktop-only">
+            <nav role="navigation" class="app-c-contents-list">
+                <h2>
+      Contents
+    </h2>
+                <ol class="app-c-contents-list__list">
+                    <li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+                        <a class="app-c-contents-list__link" href="#govuk-verify-overview">
+										            Overview
+										</a> </li>
+										<li class="app-c-contents-list__list-item app-c-contents-list__list-item--numbered">
+                        <a class="app-c-contents-list__link" href="#govuk-verify-overview">
+										      Your responsbility as an ID checker
+										</a> </li>
+                </ol>
+                </ol>
+            </nav>
+        </div>
+        <div class="column-three-quarters-desktop-only ">
+            <div class="govuk-govspeak-html-publication">
+                <div class="govuk-govspeak direction-ltr">
+                    <h2>Overview</h2>
+                    <p>
+                    	The new process for checking a public sector employee's identity has been designed to be more secure and require less work from both identity checkers and people whose identity is being checked.
+                    </p>
+                    <p>
+                    	The system uses:
+                    </p>
+                    <ul class="list list-bullet">
+                    	<li>GOV.UK Verify, the government standard for online identity verification</li>
+                    	<li>Live photo matching to the UK passport database</li>
+                    	<li>Additional document checking for people without a UK passport</li>
+                    </ul>
+                    <h2>Your responsibility as an ID checker</h2>
+                    
+                    
+                    <h3>Step 1: Use a device with a camera to access the service</h3>
+										<p>You'll need to navigate to the <a href="pre-candidate">employee identity checking service</a> using the browser on a device which has a camera with at least 10 megapixels, such as a modern smartphone.
+                    </p>
+                    <h3>Step 2: Ask the person for their code</h3>
+										<p>
+											Before you check someone's identity, they will need to generate a unique identity code using GOV.UK Verify.
+										</p>
+										<p>
+											When recruting new employees, a link to generate this code will be sent with their offer to interview.
+										</p>
+                    <p>
+                    	When you meet the person face to face, you must first ask them for their code. They should be expecting to be asked for this.
+                    </p>
+                    <div class="panel panel-border-wide">
+                        <p>
+                        	You'll input the code into the <a href="pre-candidate">employee identity checking service</a>. The code should be 6 characters long and contain numbers only. e.g 653215.
+                        </p>
+                    </div>
+                    <p>
+                    	If the person has no code, then you'll click the link saying "Candidate has no code" and continue to the next step.
+                    </p>
+										
+                    <h3>Step 3: Take a photo of the person</h3>
+                    <p>You'll then need to take a photo of the person. <a href="photo-guidance">See the guidance on taking photos for biometric matching.</a></p>
+										<p>
+											The system will perform this matching for you and show you the result.
+										</p>
+										
+                    <div class="panel panel-border-wide">
+                        <h4>You may need to do an additional step</h4>
+                        <p>If the person does not have a UK passport, the system will also prompt you to photograph their photo ID. This must be a UK driving license or a non-UK passport with a biometric residence permit.
+                        </p>
+                        <p>If the person has not been able to verify their identity online, the system will also ask you to photograph their proof of address. This must be a bank statement, utilities bill, or proof of tenancy.</p>
+                    </div>
+
+                    <h3>Final step: The result</h3>
+                    <p>
+                    	When there are no more checks to complete, you will see a confirmation screen.
+                    </p>
+                    <p>
+                    	If the identity check fails, you won't find out immediately. You will receive an email with instructions with what you need to do.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-sticky-element class="govuk-sticky-element">
+            <a class="app-c-back-to-top dont-print" href="#contents">
+                <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
+                    <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+                </svg>
+                Contents
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock %}

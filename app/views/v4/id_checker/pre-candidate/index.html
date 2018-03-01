@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Check a candidate's identity
+      </h1>
+			<div class="form-group">
+			<label class="form-label" for="full-name-f1">Enter candidate's code <span class="form-hint">The code should be 6 characters long and contain numbers only, e.g. 653215</span></label>
+			<input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+			
+			<a href="../candidate/take-photo-webcam" class="button">Next</a>
+    </div>
+      <p>
+      <a href="#">Candidate has no code</a>
+    </p>
+</main>
+
+{% endblock %}

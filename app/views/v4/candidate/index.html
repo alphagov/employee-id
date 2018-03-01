@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Confirm your identity
+      </h1>
+
+      <p>
+        We need you to confirm that you are the same person who proved their identity before your interview.
+			</p>
+			<p>
+				 You'll need to:
+		 	 </p>
+			 <ul class="list list-bullet">
+				<li>
+					signin with your existing GOV.UK Verify identity account
+				</li>
+				<li>
+					have your photo taken
+				</li>
+				<li>
+					show your identity document to your hiring manager
+				</li>
+			 </ul>
+			
+			<a class="button button-start" href="http://govuk-verify.herokuapp.com/intro?requestId=job-interview" role="button">Continue to GOV.UK Verify</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
