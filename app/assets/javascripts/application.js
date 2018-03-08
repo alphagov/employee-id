@@ -29,6 +29,12 @@ $(document).ready(function () {
 				window.location.href = 'webcam-photo-accepted';
 		}, 3000)
 	}
+	
+	if (window.location.href.indexOf("loading-webcam-photo") > -1) {
+		setTimeout(function() {
+				window.location.href = 'webcam-photo-accepted';
+		}, 3000)
+	}
 
 	// Deselect main checkboxes when none ticked
 	// Deselect none when main checkboxes ticked

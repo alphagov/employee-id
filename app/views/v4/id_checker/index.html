@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Check a candidate's identity
+      </h1>
+			<div class="form-group">
+			<label class="form-label" for="full-name-f1">Enter candidate's code <span class="form-hint">The code should be 6 characters long and contain numbers only, e.g. 653267</span></label>
+			<input class="form-control" id="idCode" type="text" name="idCode">
+			
+			<a onclick="chooseRoute();" class="button">Next</a>
+			<script type="text/javascript">
+				function chooseRoute(){
+					var idCode = document.getElementById("idCode");
+					if(idCode.value == "251218"){
+						window.location.href = 'id_checker/doc_scan'
+					}else{
+						window.location.href = 'id_checker/face-photo'
+					}
+				}
+			</script>
+    </div>
+      <p>
+      <a href="#">Candidate has no code</a>
+    </p>
+</main>
+
+{% endblock %}
