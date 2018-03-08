@@ -14,10 +14,20 @@
         Check a candidate's identity
       </h1>
 			<div class="form-group">
-			<label class="form-label" for="full-name-f1">Enter candidate's code <span class="form-hint">The code should be 6 characters long and contain numbers only, e.g. 653215</span></label>
-			<input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+			<label class="form-label" for="full-name-f1">Enter candidate's code <span class="form-hint">The code should be 6 characters long and contain numbers only, e.g. 653267</span></label>
+			<input class="form-control" id="idCode" type="text" name="idCode">
 			
-			<a href="id_checker/face-photo/take-photo-webcam" class="button">Next</a>
+			<a onclick="chooseRoute();" class="button">Next</a>
+			<script type="text/javascript">
+				function chooseRoute(){
+					var idCode = document.getElementById("idCode");
+					if(idCode.value == "251218"){
+						window.location.href = 'id_checker/doc_scan/doc-take-photo'
+					}else{
+						window.location.href = 'id_checker/face-photo/take-photo-webcam'
+					}
+				}
+			</script>
     </div>
       <p>
       <a href="#">Candidate has no code</a>
