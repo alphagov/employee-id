@@ -5,8 +5,15 @@
   <div class="grid-row">
     <div class="column-two-thirds">
     <h1 class="heading-xlarge">Are these photos of the same person?</h1>
-		<img src="http://loremflickr.com/300/400" />
-		<img src="http://loremflickr.com/300/400" />
+		<div class="grid-row">
+			<div class="column-half">
+				<img src="{{asset_path}}/images/facePhoto.jpg" />				
+			</div>
+			<div class="column-half">
+				<img src="{{asset_path}}/images/passportPhoto.jpg" />				
+			</div>
+		</div>
+		<br />
 		<form class="form-group">
 		  <div class="form-group">
 		    <fieldset class="form-group">
@@ -14,13 +21,12 @@
 						<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
 						<label for="radio-inline-1">Yes</label>
 					</div>
-				<div class="multiple-choice">
-					<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-					<label for="radio-inline-2">No</label>
-				</div>
-				<fieldset class="form-group">
-					<input class="button" type="submit" value="Continue">
+					<div class="multiple-choice">
+						<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+						<label for="radio-inline-2">No</label>
+					</div>
 				</fieldset>
+				<input class="button" type="submit" value="Continue">
 		  </div>
 		</form>
 	</div>
