@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+    <h1 class="heading-xlarge">Do the photos clearly match?</h1>
+		<img src="http://loremflickr.com/300/400" />
+		<img src="http://loremflickr.com/300/400" />
+		<form class="form-group">
+		  <div class="form-group">
+		    <fieldset class="form-group">
+		      <div class="multiple-choice">
+		        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+		        <label for="radio-inline-2">No, the document photo is blurry</label>
+		      </div>
+					<div class="multiple-choice">
+		        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+		        <label for="radio-inline-2">No, the face photo is blurry</label>
+		      </div>
+		      <div class="multiple-choice">
+		        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+		        <label for="radio-inline-2">No, they don't match</label>
+		      </div>
+					<div class="multiple-choice">
+						<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+						<label for="radio-inline-1">Yes</label>
+					</div>
+		    </fieldset>
+				<fieldset class="form-group">
+					<input class="button" type="submit" value="Continue">
+				</fieldset>
+		  </div>
+		</form>
+	</div>
+</div>
+</main>
+
+{% endblock %}
