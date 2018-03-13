@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-
+ 
 {% block content %}
 <main id="content" role="main">
   <div class="grid-row">
@@ -7,10 +7,10 @@
     <h1 class="heading-xlarge">Are these photos of the same person?</h1>
 		<div class="grid-row">
 			<div class="column-half">
-				<img src="{{asset_path}}/images/facePhoto.jpg" />				
+				<img src="{{asset_path}}/images/facePhoto.jpg" data-fetch-from-storage="webcam" />				
 			</div>
 			<div class="column-half">
-				<img src="{{asset_path}}/images/passportPhoto.jpg" />				
+				<img src="{{asset_path}}/images/passportPhoto.jpg" data-fetch-from-storage="document" />				
 			</div>
 		</div>
 		<br />

@@ -3,7 +3,7 @@
 {% block page_title %}
   GOV.UK prototype kit
 {% endblock %}
-
+ 
 {% block content %}
 
 <main id="content" role="main">
@@ -21,7 +21,7 @@
 						<label for="photo" class="button photo-upload-label" role="button">
 							<span id="photo-label-text" class="button-start">Add a photo</span>
 						</label>
-						<input type="file" accept="image/*;capture=camera" id="photo" class="photo-choose-file" name="photo" aria-controls="progress-container" aria-required="true">
+						<input type="file" accept="image/*;capture=camera" id="photo" class="photo-choose-file" name="photo" aria-controls="progress-container" aria-required="true" data-store-as="webcam">
 					</div>
 				</form>
 
@@ -116,8 +116,6 @@
 
 
 		</div>
-
-		<script src="/public/javascripts/take-photo-webcam.js" async></script>
 
 </div>
 </main>
